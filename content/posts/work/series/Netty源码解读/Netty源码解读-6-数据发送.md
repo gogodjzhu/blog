@@ -1,6 +1,6 @@
 ---
-title: "Netty源码解读(5)-数据处理(Handler调用链)"
-date: 2020-02-01T18:22:44+08:00
+title: "Netty源码解读(6)-数据发送"
+date: 2020-02-02T10:35:57+08:00
 description: "上一章介绍"
 tags: ["网络", "中间件", "JAVA", "Netty"]
 categories: "Netty源码解读"
