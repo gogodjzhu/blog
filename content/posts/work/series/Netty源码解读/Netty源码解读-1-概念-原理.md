@@ -2,8 +2,6 @@
 title: "Netty源码解读(1)-概念&原理"
 date: 2020-01-30T22:22:31+08:00
 description: "Netty源码解读系列第一章，介绍Netty诞生的背景和相关前置技术的特点和不足，阐述Netty设计的初衷和愿景"
-featured_image: ""
-images: [""]
 tags: ["网络", "中间件", "JAVA", "Netty"]
 categories: "Netty源码解读"
 draft: false

@@ -2,8 +2,6 @@
 title: "Netty源码解读(4)–数据接收(ByteBuf填充)"
 date: 2020-02-01T14:12:44+08:00
 description: "本文讨论Netty数据接收的过程，分为两部分进行：1. 数据接收的缓存结构; 2. 数据写入缓存的过程。"
-featured_image: ""
-images: [""]
 tags: ["网络", "中间件", "JAVA", "Netty"]
 categories: "Netty源码解读"
 draft: false

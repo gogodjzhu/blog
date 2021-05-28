@@ -2,8 +2,6 @@
 title: "Netty源码解读(2)–工作流程"
 date: 2020-01-30T22:32:31+08:00
 description: "本章结合代码介绍了Netty的核心组件，及使用Netty进行网络通信的主要流程"
-featured_image: ""
-images: [""]
 tags: ["网络", "中间件", "JAVA", "Netty"]
 categories: "Netty源码解读"
 draft: false

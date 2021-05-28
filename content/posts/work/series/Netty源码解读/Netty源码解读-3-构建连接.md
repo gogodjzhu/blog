@@ -2,8 +2,6 @@
 title: "Netty源码解读(3)–构建连接"
 date: 2020-01-31T08:12:31+08:00
 description: "网络通信的基础是建立连接，本章介绍了Netty在NIO之上是如何构建连接的，开始真正地对源码进行分析，使用的demo代码还是前文提到的EchoServer。"
-featured_image: ""
-images: [""]
 tags: ["网络", "中间件", "JAVA", "Netty"]
 categories: "Netty源码解读"
 draft: false
@@ -101,9 +99,9 @@ channelFactory在EchoServer中使用`ReflectiveChannelFactory`工厂类创建Nio
    - `ChannelPipeline`在前文已经交代过，是netty实现的对`责任链`的抽象。AbstarctChannel实现的方法采用`DefaultChannelPipeline`类。
      DefaultChannelPipeline包含以下几个核心属性：
      – head:AbstractChannelHandlerContext
-    – tail:AbstractChannelHandlerContext
+      – tail:AbstractChannelHandlerContext
      – channel:Channel
-    这几个属性构成了责任链的链式结构的基础。入站请求从head开始遍历Context, 出站请求则从tail开始遍历Context。
+      这几个属性构成了责任链的链式结构的基础。入站请求从head开始遍历Context, 出站请求则从tail开始遍历Context。
    - `Unsafe`是Channel接口提供的内部接口，正如其名所指，这是一个涉及到底层（包括分配堆外内存，获取本地/对端网络地址，网络IO等）的非安全操作的接口，不会暴露给用户使用。同时由于它跟底层操作有关，所以在AbstractChannel中只定义了一个`newUnsafe()`抽象方法，留待子类去实现(本例中由AbstractNioChannel实现)。
 
 以上是创建NioServerSocketChannel的过程。回到`AbstractBootstrap#initAndRegister()`方法，在完成Channel的实例化之后，紧接着会调用`init(channel)`初始化channel。由于Channel不同，可预料初始化工作也是不同的，在AbstractBootstrap中仅定义了抽象的`init(Channel)`方法，具体实现落到了`ServerBootstrap`中。

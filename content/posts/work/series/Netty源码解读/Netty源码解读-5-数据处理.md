@@ -2,8 +2,6 @@
 title: "Netty源码解读(5)-数据处理(Handler调用链)"
 date: 2020-02-01T18:22:44+08:00
 description: "Netty框架将网络处理的场景抽象为一系列责任链模式设计的Handler，基于Netty实现业务逻辑的本质是编排Handler和重写对应的Handler方法。本章我们就来研究下这个Netty设计的精髓。"
-featured_image: ""
-images: [""]
 tags: ["网络", "中间件", "JAVA", "Netty"]
 categories: "Netty源码解读"
 draft: false

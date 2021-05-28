@@ -1,9 +1,7 @@
 ---
 title: "Netty源码解读(6)-数据发送"
 date: 2020-02-02T10:35:57+08:00
-description: ""
-featured_image: "上一章介绍了数据处理的流程，通过编排Handler实现对数据流的处理和结果的封装，下面就是需要将结果返回给调用方，这便是本章的主题——数据发送。"
-images: [""]
+description:  "上一章介绍了数据处理的流程，通过编排Handler实现对数据流的处理和结果的封装，下面就是需要将结果返回给调用方，这便是本章的主题——数据发送。"
 tags: ["网络", "中间件", "JAVA", "Netty"]
 categories: "Netty源码解读"
 draft: false
