@@ -2,8 +2,6 @@
 title: "[译]Java垃圾回收器及对象引用"
 date: 2020-02-05T12:29:01+08:00
 description: "我们即将讨论Java中的垃圾回收概念和回收中会用到到几种对象引用类型"
-featured_image: ""
-images: [""]
 tags: ["JAVA", "译文", "GC"]
 categories: "Java原理系列"
 draft: false

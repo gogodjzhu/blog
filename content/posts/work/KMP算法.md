@@ -2,8 +2,6 @@
 title: "KMP算法"
 date: 2019-11-30T21:55:33+08:00
 description: "KMP算法，是一种解决string.LastIndex(string)问题的优化算法，本文以形象易理解为目标，给你介绍它的基本原理。希望可以帮你更好地理解它。"
-featured_image: ""
-images: [""]
 tags: ["算法"]
 draft: false
 ---

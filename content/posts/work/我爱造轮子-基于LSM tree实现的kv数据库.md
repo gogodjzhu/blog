@@ -2,8 +2,6 @@
 title: "我爱造轮子-基于LSM tree实现的kv数据库"
 date: 2019-11-24T23:15:21+08:00
 description: "手撸LSM tree"
-featured_image: ""
-images: [""]
 tags: ["算法", "动态规划"]
 draft: true
 ---
